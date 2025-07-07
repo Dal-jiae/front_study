@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form tag</title>
+</head>
+<body>
+  <!-- method : 전송방식, 기본값은 get -->
+  <form action="https://www.google.com/search" method="get">
+    <!-- 글을 입력할 수 있는 공간 생성, name 서버로 보낼 때 저장할 변수명(구글의 경우 q) -->
+    <input type="text" name="q">
+    <!-- 버튼 생성, value는 버튼 내 글자 입력 -->
+    <input type="submit" value="전송">
+
+  </form>
+
+  <form>
+    <input type="text" size="5" maxlength="5" 
+    minlength="2" autofocus>
+    <input type="text" placeholder="아이디를 입력해라"> <br>
+    <!-- 처음 들어갔을 때만 써있게끔 -->
+     <!-- readonly는 읽기만 가능 -->
+    <input type="text" value="abc" readonly> <br>
+    <!-- 비활성화 -->
+    <input type="text" value="abc" disabled> <br>
+    <!-- 반드시 입력해야만 넘어갈 수 있음 -->
+    <input type="text" required> <br>
+
+    <input type="submit" value="전송">
+  </form>
+
+  <form>
+    텍스트: <input type="text"><br>
+    비밀번호: <input type="password"><br>
+    <!-- name으로 같은 세트임을 판별, value로 적은 게 서버로 전송됨 -->
+    라디오버튼: <input type="radio" name="yes-no" value="yes"> 예 
+              <input type="radio" name="yes-no" value="no" checked> 아니오 <br>
+    체크박스: <input type="checkbox" name="chk" value="java"> Java
+             <input type="checkbox" name="chk" value="html" checked> HTML
+             <input type="checkbox" name="chk" value="css"> CSS
+    <!-- 라벨을 쓰면 체크박스가 아닌 글자만 눌러도 체크됨 -->
+     <!-- id로 같은 세트임을 입력 -->
+    <input id="agree" type="checkbox"><label for="agree">약관동의</label>
+
+    <br><br>
+    <input type="submit" value="전송">
+    <!-- 같은 폼태그 안에 있는 것들이 리셋됨 -->
+    <input type="reset" value="리셋">
+    <input type="button" value="버튼" onclick="alert('실행합니다.')">
+    <button>시작버튼명</button>
+
+    <input type="file">
+    
+    <textarea rows="10" cols="40"></textarea>
+
+    <select name="color">
+      <option value="red">빨강</option>
+      <option value="blue" selected>파랑</option>
+      <option value="yellow">노랑</option>
+    </select>
+
+    <!-- 사용자에게 숨기고 싶은 것들 -->
+    <input type="hidden">
+
+  </form>
+
+
+</body>
+</html>

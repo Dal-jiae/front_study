@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sound</title>
+</head>
+<body>
+  
+  <!-- 홈페이지 열자마자 자동재생은 autoplay -->
+   <!-- 그런데 홈페이지 정책상 muted도 함께 적어야 자동재생 가능 -->
+  <!-- 반복재생은 loop -->
+  <audio src="../images/프리스타일-Y.mp3" 
+  controls autoplay muted loop>
+    <!-- 브라우저가 지원하지 못하는 경우 -->
+    
+  </audio>
+
+  <audio autoplay controls>
+    <!-- 브라우저별로 되지 바로 재생되지 않을 때 여러 접근 경로 생성 -->
+    <source src="../images/프리스타일-Y.mp3" 
+    type="audio/mp3">
+    <source src="../images/프리스타일-Y.wav"
+    type="audio/wav">
+  </audio>
+
+  <video src="../images/nike.mp4" 
+  controls autoplay muted width="500px">
+
+  </video>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/C0Wy2eAr9Ek?si=Lmf4C6pSlMmEy6Mq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>

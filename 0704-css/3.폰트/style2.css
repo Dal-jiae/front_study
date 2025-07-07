@@ -1,0 +1,16 @@
+/* import는 다운만 받은 것 */
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+/* url을 통해 다운 받은 것 */
+@font-face {
+    font-family: 'Galmuri11-Condensed';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2506-1@1.0/Galmuri11-Condensed.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+ font-family: "Tektur", "Galmuri11-Condensed", sans-serif;
+}
+
+
+

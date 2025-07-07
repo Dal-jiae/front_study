@@ -1,0 +1,46 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* .float {
+  float: left;
+}
+
+.clear {
+  clear: both;
+} */
+
+.box {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+
+.menu {
+  width: 500px;
+  height: 100px;
+  background-color: antiquewhite;
+}
+
+.nav {
+  width: 100px;
+  height: 300px;
+  background-color: aqua;
+  float: left;
+}
+
+.content {
+  width: 400px;
+  height: 300px;
+  background-color: purple;
+  float: left;
+}
+
+.footer{
+  width: 500px;
+  height: 100px;
+  background-color: green;
+  clear: both;
+}

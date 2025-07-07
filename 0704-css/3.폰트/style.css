@@ -1,0 +1,56 @@
+p {
+  /* h태그 제외 폰트 사이즈를 따로 설정하지 않으면 기본 16px */
+  /* 글꼴크기 */
+  font-size: 16px;
+  /* 글꼴두께 - lighter는 100, normal은 400, bold는 700, bolder는 900*/
+  font-weight: 500;
+}
+
+/* 16px = 1em = 100% */
+/* 고정 크기를 정할 때는 16px */
+/* 상대적 크기(부모와 비교)를 정할 때는 em, % */
+body {
+  /* 줄간격 */
+  line-height: 170%;
+  /* 글꼴 */
+  /* 사용자 브라우저에 따라 순차적으로 폰트 적용 */
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* 글꼴 스타일 */
+  font-style: italic;
+
+  /* 소문자를 대문자로 변환 */
+  font-variant: small-caps;
+
+}
+
+  /* font: [font-style font-variant font-weight]
+  [font-size/line-height] [font-family]; */
+  /* 띄어쓰기로 구분 */
+
+p {
+  font: italic bold 25px '굴림', Gulim;
+  font: bold italic small-caps 35px/1.2 '돋움', '굴림', Gulim;
+}
+
+h5 {
+  /* 글꼴 색*/
+  color: red;
+  color: #ff0000;
+  color: rgb(255,0,0);
+  /* 텍스트 효과 */
+  text-decoration: underline;
+  /* 대소문자 설정 */
+  text-transform: uppercase;
+  /* 그림자 */
+  /* 가로 세로 그림자퍼짐 그림자색 */
+  text-shadow: 1px 2px 5px gray,
+               2px 3px 6px blue;
+
+
+  /* 자간 */
+  letter-spacing: 5px;
+  /* 단어 간격 */
+  word-spacing: 30px;
+  text-align: center;
+}

@@ -1,0 +1,26 @@
+ol {
+  list-style-type: upper-roman;
+  /* background-color: aqua; */
+}
+
+ul > li {
+  list-style-type: lower-greek; 
+  /* list style 이미지 크기 조절 불가능 */
+  /* 배경이미지로 넣어서 크기 조절 할 수 있음 */
+  /* list-style-image: url("../../images/garen.jpg"); */
+  /* background-color: pink; */
+
+  /* list-style-type: none;
+  background-image: url("../../images/garen.jpg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: left center;
+  margin: 0;
+  /* 위쪽 오른쪽 아래쪽 왼쪽 */
+  /* padding: 20px 0 20px 30px;  */
+}
+
+ul {
+  list-style-position: inside;
+  list-style: square inside;
+}

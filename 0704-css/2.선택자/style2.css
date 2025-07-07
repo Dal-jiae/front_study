@@ -1,0 +1,16 @@
+/* 하위 선택자 */
+#first p {
+  color:brown;
+}
+
+#second > p {
+  background-color: bisque;
+}
+
+p.inner {
+  /* p .inner일 경우, p태그 안에 있는 자식들 중에 inner클래스를 포함하는 태그들 */
+  /* 띄어쓰면 자식 의미 */
+  /* p.inner일 경우, p태그 중에서 클래스 명이 inner인 것을 지칭 */
+  /* 붙여쓰면 속성 의미 */
+  color: rgb(134, 110, 3);
+}

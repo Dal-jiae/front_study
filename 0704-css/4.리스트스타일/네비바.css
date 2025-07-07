@@ -1,0 +1,22 @@
+.nav > li {
+  list-style-type: none;
+  float: left;
+  width: 20%;
+  text-align: center;
+
+}
+
+.nav {
+  background-color: orange;
+  height: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+i {
+  font-size: 32px;
+  color: rgb(98, 43, 226);
+}

@@ -1,0 +1,37 @@
+.float {
+  float: left;
+}
+
+.clear{
+  clear: both;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.box1 {
+  background-color: #47b647;
+}
+
+.box2 {
+  background-color: #0d9c65;
+}
+
+.box3 {
+  background-color: #cabc38;
+  float: right;
+}
+
+.box4 {
+  background-color: #c96100;
+  margin: auto;
+}
+
+.container {
+  height: 500px;
+  border: 1px solid red;
+  overflow: scroll;
+}
+
