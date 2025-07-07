@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.home {
+  background-color: plum;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  padding: 10px;
+}
+
+.home > i, p {
+  float: left;
+  padding: 3px;
+}
+
+ul {
+  list-style: none;
+  text-align: right;
+}
+
+ul > li {
+  display: inline-block;
+  text-align: center;
+  margin: 5px;
+}
+
+.text {
+  margin: 50px;
+}
+
+.text > p {
+  line-height: 200%;
+}
+
+.icon{
+  clear: both;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+

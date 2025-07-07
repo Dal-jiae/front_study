@@ -1,0 +1,28 @@
+table {
+  width: 400px;
+  border: 1px solid red;
+  /* 칸 간격 조절 */
+  /* border-collapse: collapse; */
+  /* 기본값은 seperate로 조금씩 간격이 존재함 */
+
+  /* 칸 너비 균등하게 조절할 때 사용*/
+  /* 칸 너비 일정하게 - 단, table 너비값이 있어야 적용 가능 */
+  table-layout: fixed;
+
+  /* 캡션 위치 */
+  /* caption은 기본적으로 위에 위치함 */
+  caption-side: top;
+
+  /* 빈칸 없애기 */
+  empty-cells: hide; 
+}
+
+td {
+  border: 1px solid red;
+}
+
+img {
+  width: 50px;
+  /* inline, 테이블 칸들 수직정렬 */
+  vertical-align: middle;
+}
