@@ -71,6 +71,9 @@ div:hover {
 
 @keyframes spin {
   form {
+    transform:rotate(0deg);
+  }
+  to {
     transform:rotate(360deg);
   }
 }

@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  margin: 20px;
+  overflow: visible;
+}
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  float: left;
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  float: left;
+}
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  background: green;
+  float: left;
+}
+
+.box4 {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  float: left;
+}
+
+div:hover {
+  transform: scale(2, 2);
+  box-shadow: 5px 5px 5px rgb(61, 61, 61);
+
+  position: relative;
+  z-index: 99;
+
+  transform-origin: center;
+}
