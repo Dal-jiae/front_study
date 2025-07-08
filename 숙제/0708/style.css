@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1200px;
+}
+
+header {
+  background-color: white;
+  height: 80px;
+  width: 100%;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  top: 0;
+  position: sticky;
+  z-index: 99;
+
+  display: flex;
+  overflow: hidden; 
+}
+
+.l-menu {
+  display: flex;
+  margin-right: auto;
+  padding: 3px;
+}
+
+.r-menu {
+  display: flex;
+  align-items: center;
+}
+
+.icon > img {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+ul > li {
+  display: inline-block;
+  margin: 6px;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 메인 1 */
+.container1 {
+  height: 685px;
+  background: #FBF7E2;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.container1 > .content1 {
+  margin-top: 20%;
+  font-size: larger;
+  margin-left: 50px;
+}
+
+.content1 > h2 {
+  margin-bottom: 10px;
+}
+
+.content1 > p {
+  line-height: 160%;
+}
+
+.container1 > img {
+  height: 685px;
+  width: 800px;
+}
+
+
+/* 메인 2 */
+.container2 {
+  height: 685px;
+  background: white;
+  
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.container2 > img {
+  height: 685px;
+  width: 500px;
+}
+
+.content2 {
+  margin-top: 20%;
+  margin-right: 50px;
+  padding: 10px;
+}
+
+.content2 > p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.content3 > a {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(212, 212, 212);
+  color: black;
+  border-radius: 10%;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+
+/* bottom */
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid gray;
+  padding-top: 20px;
+}
+
+.content4 {
+  display: flex;
+}
+
+.list1 {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.list2{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.list3{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.content5 > div {
+  width: 150px;
+  height: 100px;
+  background-color: rgb(212, 212, 212);
+  border-radius: 10%;
+  float: left;
+  margin-right: 10px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.content5 > p {
+  margin-bottom: 10px;
+}
+
+.content5 > div img {
+  width: 30px;
+  height: 30px;
+}
+
+.content5 > div {
+  display: flex;
+}
+

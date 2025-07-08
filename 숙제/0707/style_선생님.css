@@ -1,0 +1,17 @@
+a {
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  color: white;
+  background-color: red;
+}
+
+.login-form input:focus {
+  color: white;
+  background: green;
+}
+
+input::placeholder {
+  color: white;
+}

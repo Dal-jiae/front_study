@@ -1,0 +1,29 @@
+.container div {
+  width: 100px;
+  height: 100px;
+
+  display: inline-block;
+  margin: 50px;
+
+  transition: all 0.5 ease;
+}
+
+.container div:nth-child(1) {
+  background: red;
+}
+.container div:nth-child(2) {
+  background: blue;
+}
+.container div:nth-child(3) {
+  background: yellow;
+}
+.container div:nth-child(4) {
+  background: green;
+}
+
+
+.container div:hover {
+  /* 배수만큼 커지는 것*/
+  transform: scale(2, 2);
+  box-shadow: 2px 2px 10px rgb(61, 61, 61);
+}

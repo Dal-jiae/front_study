@@ -1,0 +1,40 @@
+.parent {
+  display: flex;
+  /* 세로 가운데 */
+  align-items: center;
+  /* 가로 가운데 */
+  justify-content: center;
+}
+
+.child1 {
+  width: 500px;
+  height: 500px;
+  background: yellowgreen;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child2{
+  width: 400px;
+  height: 400px;
+  background: olivedrab;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child3 {
+  width: 300px;
+  height: 300px;
+  background: olive;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center;
+  line-height: 300px; */
+}
