@@ -7,7 +7,7 @@ div > p:last-child {
   color: blue;
 }
 
-/* 다른 태그가 중간에 있어도 제왼된 순번으로 처리 */
+/* 다른 태그가 중간에 있어도 제외된 순번으로 처리 */
 div > h3:nth-of-type(4) {
   color: blueviolet;
 }
