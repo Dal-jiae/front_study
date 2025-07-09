@@ -35,10 +35,25 @@ header {
   align-items: center;
 }
 
+.icon {
+  display: flex;
+  align-items: center;
+}
+
 .icon > img {
   height: 50%;
   width: 100%;
   overflow: hidden;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin:10px;
+}
+
+.nav > a:first-child {
+  color: rgb(224, 146, 2)
 }
 
 ul {
@@ -50,9 +65,29 @@ ul > li {
   margin: 6px;
 }
 
+.search input {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search input:focus {
+  background: rgb(227, 227, 227);
+}
+
+.r-menu input[type="submit"] {
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+}
+
 header a {
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 
 /* 메인 1 */
@@ -128,10 +163,17 @@ header a {
   justify-content: space-around;
   border-top: 1px solid gray;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .content4 {
   display: flex;
+}
+
+.content4 a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
 }
 
 .list1 {
@@ -149,10 +191,11 @@ header a {
   flex-direction: column;
 }
 
-.content5 > div {
-  width: 200px;
-  height: 100px;
+.content5 > a {
+  width: 150px;
+  height: 60px;
   background-color: rgb(212, 212, 212);
+  color: black;
   border-radius: 10%;
   float: left;
   margin-right: 10px;
@@ -160,18 +203,19 @@ header a {
   text-decoration: none;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
 .content5 > p {
   margin-bottom: 10px;
 }
 
-.content5 > div img {
+.content5 > a img {
   width: 30px;
   height: 30px;
 }
 
-.content5 > div {
+.content5 > a {
   display: flex;
 }
 
