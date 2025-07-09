@@ -137,29 +137,27 @@ header a {
 .list1 {
   display: flex;
   flex-direction: column;
-  text-decoration: none;
 }
 
 .list2{
   display: flex;
   flex-direction: column;
-  text-decoration: none;
 }
 
 .list3{
   display: flex;
   flex-direction: column;
-  text-decoration: none;
 }
 
 .content5 > div {
-  width: 150px;
+  width: 200px;
   height: 100px;
   background-color: rgb(212, 212, 212);
   border-radius: 10%;
   float: left;
   margin-right: 10px;
 
+  text-decoration: none;
   align-items: center;
   justify-content: center;
 }
