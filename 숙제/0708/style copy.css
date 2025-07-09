@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* 모든 태그들에 동일한 값을 적용시키는 태그 */
+}
+
+body {
+  /* 기기 해상도에 맞춰서 작업하는 것을 선호 */
+  /* e.g. 1280 */
+  width: 1200px;
+  /* 수평 가운데 정렬 */
+  margin: auto;
+}
+
+header {
+  background-color: white;
+  height: 80px;
+  width: 1200px;
+  
+  overflow: auto;
+  padding: 10px;
+
+  top: 0;
+  position: fixed;
+  z-index: 99;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+/* 동일한 속성 적용이라면 콤마(,)로 잇기 */
+.l-menu, .r-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo > img {
+  height: 30px;
+  /* 하나만 설정해도 그 비율에 맞춰 들어간다 */
+  margin-right: 30px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin:10px;
+}
+
+.carrot-color {
+  color: #ff8a3d;
+}
+
+ul {
+  list-style: none;
+}
+
+.header-nav > ul > li {
+  /* 레이아웃 잡을 때 flex가 편하다 */
+  display: inline-block;
+  margin: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  padding-right: 30px;
+}
+
+a {
+  color: black;
+}
+
+input[type="search"] {
+  width: 250px;
+  height: 40px;
+
+  font-size: 15px;
+  background: #dfdfdf;
+  border-radius: 5px;
+  border: none;
+  
+  padding: 18px;
+  margin-right: 10px;
+}
+
+/* 공통적인 버튼 속성 만듦 */
+.btn {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn-light {
+  width: 80px;
+  height: 30px;
+  border: 1px solid lightgray;
+  background: white;
+  
+}
+
+/* 메인 아티클 */
+main {
+  margin-top: 70px;
+  width: 100%;
+}
+
+article {
+  height: 685px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.article-top {
+  background: #FBF7E2;
+}
+
+.article-top h2, .article-bottom h2 {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.article-top > div:nth-child(1) {
+  margin-left: 50px;
+}
+
+.article-top p {
+  line-height: 160%;
+}
+
+.article-bottom {
+  background: white;
+  border-bottom: 1px solid gray;
+}
+
+.btn-dark {
+  background: lightgray;
+}
+
+.article-bottom p {
+  margin-bottom: 30px;
+}
+
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+footer li {
+  padding: 5px;
+}
+
+footer > div:nth-child(2) {
+  margin: 10px;
+}
+
+footer h5 {
+  padding: 15px 0;
+}
+
+footer > div:nth-child(2) a{
+  margin-right: 10px;
+}

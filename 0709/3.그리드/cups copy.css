@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.image1 {
+  background-image: url(../cups/cup-1.jpg);
+}
+.image2 {
+  background-image: url(../cups/cup-2.jpg);
+}
+.image3 {
+  background-image: url(../cups/cup-3.jpg);
+}
+.image4 {
+  background-image: url(../cups/cup-4.jpg);
+}
+.image5 {
+  background-image: url(../cups/cup-5.jpg);
+}
+.image6 {
+  background-image: url(../cups/cup-6.jpg);
+}
+
+.container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 300px);
+  grid-auto-rows: 320px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.card {
+  background: white;
+  /* border: 1px solid black; */
+  box-shadow: 2px 2px 5px gray;
+  padding: 10px;
+
+}
+
+.card-image {
+  height: 50%;
+  background-size: cover;
+}
+
+.card h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+.card p {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 476px) {
+  .container {
+    grid-template-columns: 300px;
+  }
+}
