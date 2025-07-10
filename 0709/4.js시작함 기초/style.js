@@ -8,7 +8,7 @@ console.log("콘솔창에 내용띄우기");
 document.write("문서에 쓰기")
 
 //변수 만들기
-// var 변수이름; // 옛날거
+// var 변수명; // 옛날거
 let 변수이름; 
 
 let msg = 'hello';
@@ -23,15 +23,15 @@ const COLOR = 'red';
 let n = 12.234;
 
 console.log( typeof(n) );
-console.log( typeof n ); //가로 있든 없든 가능
+console.log( typeof n ); //괄호 있든 없든 가능
 
 // 실제로 나누기 0은 불가능하지만
 // JS 수학적 연산은 전부 처리가 됨
 // 대신 결과가 안나오는 건 특수 숫자 값으로 처리
 console.log( n / 0 );
 console.log( typeof Infinity );
-console.log("abc" / 2); 
-console.log(typeof NaN); //NaN도 숫자
+console.log( "abc" / 2 ); 
+console.log( typeof NaN ); //NaN도 숫자
 
 
 
