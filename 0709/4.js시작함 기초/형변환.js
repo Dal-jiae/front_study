@@ -5,13 +5,14 @@ a = String(a);
 console.log(typeof a, a);
 
 let b = undefined;
-console.log(typeof b);
+console.log(typeof b);  // undefined
 b = String(b);
-console.log(typeof b, b);
+console.log(typeof b, b);  // string 'undefined'
 
 // 숫자 형변환
 // 자동 형변환
 console.log("12" / "5");
+// 문자열일 경우 + 사용하면 연결을 우선한다. 
 
 let c = "123";
 c = Number(c);

@@ -1,0 +1,12 @@
+.alert-box {
+  padding: 20px;
+  border-radius: 20px;
+  background: skyblue;
+
+  display: none;
+}
+
+.alert {
+  background: rgb(134, 134, 231);
+  height: 100px;
+}
