@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../../0702"
+		},
+		{
+			"path": "../../0703"
+		},
+		{
+			"path": "../../0704-css"
+		},
+		{
+			"path": "../../0707"
+		},
+		{
+			"path": "../../0708"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "숙제"
+	}
+}

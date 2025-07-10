@@ -17,6 +17,18 @@
 const btn = document.querySelector('.btn-mode');
 const body = document.body;
 btn.addEventListener('click', () => {
+  if(btn.value === '다크 모드') {
   body.style.color = 'white';
   body.style.background = 'black';
+  btn.value = '라이트 모드';  
+  } else {
+    lightMode();
+    return;
+  }
 })
+
+function lightMode() {
+  body.style.color = 'black';
+  body.style.background = 'white';
+  btn.value = '다크 모드';
+}
