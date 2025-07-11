@@ -16,19 +16,38 @@
 // body를 한번만 찾게 해서 성능을 높이기
 const btn = document.querySelector('.btn-mode');
 const body = document.body;
+// btn.addEventListener('click', () => {
+//   if(btn.value === '다크 모드') {
+//   body.style.color = 'white';
+//   body.style.background = 'black';
+//   btn.value = '라이트 모드';  
+//   } else {
+//     lightMode();
+//     return;
+//   }
+// })
+
+// function lightMode() {
+//   body.style.color = 'black';
+//   body.style.background = 'white';
+//   btn.value = '다크 모드';
+// }
+
+
+
+// 다크모드이면 true, 아니면 false
+let isDark = false;
+
 btn.addEventListener('click', () => {
-  if(btn.value === '다크 모드') {
-  body.style.color = 'white';
-  body.style.background = 'black';
-  btn.value = '라이트 모드';  
+    if(isDark) {
+    body.style.color = 'white';
+    body.style.background = 'black';
+    btn.value = '다크 모드';  
+    isDark = !isDark;
   } else {
-    lightMode();
-    return;
+    body.style.color = 'black';
+    body.style.background = 'white';
+    btn.value = '라이트 모드';  
+    isDark = !isDark;
   }
 })
-
-function lightMode() {
-  body.style.color = 'black';
-  body.style.background = 'white';
-  btn.value = '다크 모드';
-}
