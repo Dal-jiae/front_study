@@ -90,19 +90,49 @@ for(let i=0; i<cart.length; i++) {
     // 2. 꺼내온 데이터에 새로 담을 정보를 추가
     // 3. 추가된 데이터를 다시 로컬스토리지에 넣음
 
+    // 로컬스토리지에서 꺼내옴
     let temp = localStorage.getItem('cart');
+    // 장바구니에 넣으려는 과일이 로컬스토리지에 있는지 여부를 알려주는 변수 
+    let isHave = false;
+    // 장바구니에 넣으려는 과일이 로컬 스토리지에 있으면
+    // 몇번째 인덱스에 있는지 알려주는 변수
+    let index;
+
     if(temp != null) {
       // 1번 - 로컬스토리지에 있으면 먼저 그 정보들을 꺼내와야 함
+      // localStorage는 문자열만 저장하므로,
       // 문자열 형태이므로 원본인 배열로 되돌려줌
       temp = JSON.parse(temp);
 
-      // 새로 장바구니에 담을 name을 추가
-      temp.push(name);
+      // 배열방 안에 이름이 같은 것이 있는지
+      temp.forEach((data,i) => { // forEach는 향상된 for문과 같음
+        if(data.name === name ){
+          isHave = true; // 과일의 존재여부
+          index = i; // 몇 번방에 있는지 위치 알려줌
+        }
+      })
+
+
+      // 위 반복문에서 기존 로컬 스토리지에 해당 과일이 있는지 없는지
+      // 검사를 끝냈으므로 여부에 따라 다르게 처리
+      if(isHave) {
+        temp[index].cnt++;
+      } else {
+        temp.push( {'name': name, 'cnt': 1 } );
+      }
+
+
+      // // 새로 장바구니에 담을 name을 추가
+      // temp.push(name);
       // 추가된 정보를 로컬스토리지에 다시 넣음
       localStorage.setItem('cart', JSON.stringify(temp));
 
     } else {
-      localStorage.setItem('cart', JSON.stringify([name])); // localStorage에 cart라는 이름으로 name을 집어넣으라는 뜻
+      // 해당 과일이 없을 때가 아님 - 과일 존재 여부가 중요한 것이 아님
+      // 로컬 스토리지 자체가 비어 있을 경우 
+      // localStorage.setItem('cart', JSON.stringify([name])); // localStorage에 cart라는 이름으로 name을 집어넣으라는 뜻
+      localStorage.setItem('cart', 
+        JSON.stringify([{ 'name': name, 'cnt': 1 }])); 
     }
   })
 }
@@ -138,7 +168,7 @@ localStorage.setItem('arr', arr_json);
 
 arr = localStorage.getItem('arr');
 
-// 로컬스토리지에서 꺼내와도 아직가진 문자열임(구조가 살아있는 상태)
+// 로컬스토리지에서 꺼내와도 아직까진 문자열임(구조가 살아있는 상태)
 console.log(arr, typeof arr);
 
 // 문자열인 형태를 다시 배열로 되돌려줌

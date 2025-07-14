@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel {
+  /* vw 사용자가 보는 브라우저 사이즈가 100vw */
+  width: 300vw; 
+  display: flex;
+  transition: all 1s;
+
+}
+
+.box > img {
+  width: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
