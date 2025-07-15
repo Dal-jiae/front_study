@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+    <!-- 서버에 보낼 때 name 설정을 해야 값을 보내고 받을 수 있다. -->
+    userid: <input type="text" name="userId"> <br>
+    title: <input type="text" name="title"> <br>
+    <!-- textarea 사용자가 여러 줄의 텍스트를 입력할 수 있는 텍스트 입력 영역을 정의할 때 사용 -->
+    body: <textarea name="body" id=""></textarea> 
+    <input class="post" type="submit" value="게시글작성">
+  </form>
+  
+  <button class="get">Get 요청</button>
+  <button class="async">async 테스트</button>
+
+  <div class="container">
+    <h1 class="title"></h1>
+    <p class="id"></p>
+    <p class="userid"></p>
+    <pre class="body"></pre>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

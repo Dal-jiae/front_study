@@ -26,17 +26,28 @@ box.addEventListener('scroll', () => {
 
 const next = document.querySelector('button');
 
-// check에 값이 저장되어 있어야 그걸 빼와서 정리할 수 있을 텐데
-check.addEventListener('click', () =>{
-  {check: 0}
-  {check: 1}
+next.addEventListener('click', () => {  
+  if(check.checked) {
+    alert('다음 페이지로 이동합니다.');
+    console.log(check.checked); // 체크 하면 true, 안 하면 false
+  } else {
+    alert('동의하십쇼');
+    console.log(check.checked);
+  }
 })
 
-next.addEventListener('click', () => {
-  if(check == false) {
-    alert('동의하십쇼')
-  } else if (check === true) {
-    alert('다음 페이지로 이동합니다.')
-  }
+// 446p. 그림으로 볼 수 있음
+console.log(window.innerHeight); // 현재 보고 있는 윈도우 화면 높이 확인
+console.log(document.body.clientHeight); // 해당 창의 전체 높이 
+
+const innerHeight = window.innerHeight;
+const bodyHeight = document.body.clientHeight;
+
+window.addEventListener('scroll', () => {
+  console.log(window.scrollY); // 화면에서 스크롤을 얼마나 했는지
+
+  const status = window.scrollY / (bodyHeight-innerHeight) * 100; // 진행상태 너비값
+  // console.log("비율", status);
+  document.querySelector('.status-bar').style.width = `${status}%`
 })
 
